@@ -1,8 +1,8 @@
-import socket
+from socket import socket, AF_INET, SOCK_STREAM
 import sys
 import json
-from common.variables import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
-    PRESENCE, TIME, USER, ERROR, DEFAULT_PORT, RESPONDEFAULT_IP_ADDRESSE
+from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, RESPONDEFAULT_IP_ADDRESSE, ERROR, \
+    DEFAULT_PORT, DEFAULT_IP_ADDRESS, MAX_CONNECTIONS
 from common.utils import get_mess, send_mess
 
 
@@ -36,14 +36,14 @@ def main():
         if '-a' in sys.argv:
             address = sys.argv[sys.argv.index('-a') + 1]
         else:
-            address = ''
+            address = DEFAULT_IP_ADDRESS
 
     except IndexError:
         print(
             'After the \'a\' - you must specify the address that the server will listen to.')
         sys.exit(1)
 
-    transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    transport = socket(AF_INET, SOCK_STREAM)
     transport.bind((address, port))
 
     transport.listen(MAX_CONNECTIONS)
