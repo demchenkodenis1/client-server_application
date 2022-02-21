@@ -1,7 +1,7 @@
 from socket import socket, AF_INET, SOCK_STREAM
 import sys
 import json
-from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, RESPONDEFAULT_IP_ADDRESSE, ERROR, \
+from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, AUTORESPONDER_IP_ADDRESS, ERROR, \
     DEFAULT_PORT, DEFAULT_IP_ADDRESS, MAX_CONNECTIONS
 from common.utils import get_mess, send_mess
 
@@ -11,7 +11,7 @@ def clients_massage_handler(message):
             and USER in message and message[USER][ACCOUNT_NAME] == 'New_User':
         return {RESPONSE: 200}
     return {
-        RESPONDEFAULT_IP_ADDRESSE: 400,
+        AUTORESPONDER_IP_ADDRESS: 400,
         ERROR: 'Wrong Request'
     }
 
