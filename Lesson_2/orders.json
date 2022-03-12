@@ -1,0 +1,25 @@
+{
+    "orders": [
+        {
+            "item": "chair",
+            "quantity": "5",
+            "price": "20",
+            "buyer": "Ivanov",
+            "date": "01.02.2022"
+        },
+        {
+            "item": "table",
+            "quantity": "12",
+            "price": "150",
+            "buyer": "Petrov",
+            "date": "01.02.2022"
+        },
+        {
+            "item": "door",
+            "quantity": "10",
+            "price": "15",
+            "buyer": "Sidorov",
+            "date": "01.02.2022"
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+2022-03-12 14:38:34,258 CRITICAL server_log_config.py Критическая ошибка
+2022-03-12 14:38:34,258 ERROR server_log_config.py Ошибка
+2022-03-12 14:38:34,259 DEBUG server_log_config.py Отладочная информация
+2022-03-12 14:38:34,259 INFO server_log_config.py Информационное сообщение
