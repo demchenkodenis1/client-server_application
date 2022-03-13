@@ -5,7 +5,7 @@ import os
 import logging
 import logging.handlers
 
-sys.path.append('../')
+sys.path.append('..')
 from common.variables import LOGGING_LEVEL
 
 # создаём формировщик логов (formatter):

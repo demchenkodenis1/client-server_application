@@ -1,10 +1,12 @@
 """Утилиты"""
 
-import sys
 import json
+import sys
+sys.path.append('..')
 from common.variables import MAX_PACKAGE_LENGTH, ENCODING
 from errors import IncorrectDataRecivedError, NonDictInputError
 from decos import log
+
 
 
 @log
@@ -21,10 +23,8 @@ def get_message(client):
         response = json.loads(json_response)
         if isinstance(response, dict):
             return response
-        else:
-            raise IncorrectDataRecivedError
-    else:
         raise IncorrectDataRecivedError
+    raise IncorrectDataRecivedError
 
 
 @log
