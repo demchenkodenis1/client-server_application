@@ -1,0 +1,17 @@
+2022-03-12 14:38:52,586 CRITICAL client_log_config.py Критическая ошибка
+2022-03-12 14:38:52,586 ERROR client_log_config.py Ошибка
+2022-03-12 14:38:52,586 DEBUG client_log_config.py Отладочная информация
+2022-03-12 14:38:52,586 INFO client_log_config.py Информационное сообщение
+2022-03-12 15:52:11,129 CRITICAL client_log_config.py Критическая ошибка
+2022-03-12 15:52:11,135 ERROR client_log_config.py Ошибка
+2022-03-12 15:52:11,135 DEBUG client_log_config.py Отладочная информация
+2022-03-12 15:52:11,135 INFO client_log_config.py Информационное сообщение
+2022-03-12 15:54:48,708 DEBUG decos.py Была вызвана функция create_arg_parser c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main@@@Вызов из функции main@@@вызов из модуля I:\programming\client-server-apps\Lesson_6\client.py
+2022-03-12 15:54:48,714 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777
+2022-03-12 15:54:48,714 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2022-03-12 15:54:48,715 DEBUG decos.py Была вызвана функция create_presence c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main@@@Вызов из функции main@@@вызов из модуля I:\programming\client-server-apps\Lesson_6\client.py
+2022-03-12 15:54:48,715 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58602), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1647082488.7141924, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main@@@Вызов из функции main@@@вызов из модуля I:\programming\client-server-apps\Lesson_6\client.py
+2022-03-12 15:54:48,720 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58602), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main@@@Вызов из функции main@@@вызов из модуля I:\programming\client-server-apps\Lesson_6\client.py
+2022-03-12 15:54:48,720 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-12 15:54:48,721 DEBUG decos.py Была вызвана функция process_ans c параметрами ({'response': 200},), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main@@@Вызов из функции main@@@вызов из модуля I:\programming\client-server-apps\Lesson_6\client.py
+2022-03-12 15:54:48,721 INFO client.py Принят ответ от сервера 200 : OK
