@@ -1,0 +1,9 @@
+items:
+- chair
+- table
+- door
+items_quantity: 3
+items_price:
+  chair: 10€-20€
+  table: 120$-150€
+  door: 10€-75€
